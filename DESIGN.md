@@ -51,6 +51,7 @@ Use the signature color only for: logo, active tab icon, role-card icon tiles, s
 - Buttons: 40px high (minimum touch target 36px), 8px radius. One primary (signature fill) per view; the rest are outlined or ghost. Buttons lock while a transaction runs.
 - Cards: 12px radius, 1px border, soft raised shadow (`0 1px 2px rgba(0,0,0,.06), 0 4px 12px rgba(0,0,0,.04)`).
 - Item cards: 3px colored top edge for the status color, dot status chips.
+- Fixed card anatomy: every item card shows the same fields in the same order (title, status chip, key amount, secondary line, action). Never reorder or hide fields between cards, so users can compare at a glance.
 - Role cards: compact row with a 48px tinted icon tile (signature tint, signature icon), title, one-line text, arrow. Border takes the signature color on hover.
 - Chips and pills: 999px radius, 12px text, dot + label for status.
 - Inputs: 40px high, 1px border, 8px radius, focus ring 2px signature at 40% alpha.
