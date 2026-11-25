@@ -74,7 +74,7 @@ Home page, in order:
 1. Hero: live-status pill, headline, short lede, two CTAs on the left; domain-themed SVG illustration on the right (hidden below 720px) with one entrance animation. Below it a stats strip with four real stats and colored sublines.
 2. "Live contract activity" feed built from real contract data, with time-ago labels and explorer links, ending in a "Balanced" check from the contract's accounting view.
 3. Role entry cards with original SVG illustrations.
-4. The core action as a short sentence of tappable chip controls.
+4. The core action as a short sentence of tappable chip controls. It must be usable on the first screen without scrolling, with live values (amounts, fees, time) shown right next to it.
 5. Collapsible four-column how-it-works with signature-colored step numbers.
 6. Latest items.
 
@@ -97,6 +97,8 @@ Separate, human messages for:
 - refunded bounces (say the value came back)
 
 Rules: buttons lock while running; confirm dialog before value-moving actions; toast on completion.
+
+Costs and risk: show the full amount, any fee or stake, and what comes back, inline next to the action button and again in the confirm dialog, never hidden behind a link. Put a one-line note beside any claim it limits (for example "Studio test network, no real value").
 
 Wallet and contract:
 
