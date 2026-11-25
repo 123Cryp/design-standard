@@ -148,8 +148,28 @@ When building a frontend from this file:
 3. Wire every number to a contract view; if a view is missing, add it to the contract.
 4. Implement the transaction tracker and all five error messages from section 7.
 5. Run the QA list from section 9 and fix everything before delivering.
-6. Deliver code and docs in English only.
+6. Check every item in section 11 (known pitfalls) before delivering.
+7. Deliver code and docs in English only.
 
 Quick prompt:
 
 > Build the frontend for this GenLayer project following DESIGN.md. Signature color: <color + reason>. One `index.html`, mobile-first, real contract data only.
+
+## 11. Known pitfalls (from reviewing a shipped project)
+
+Check each one before delivering.
+
+1. First screen: the hero lede is at most two lines. The core action, with its amounts and costs, is visible on the first phone screen. Do not fill the first screen with pill, headline, long text and buttons only.
+2. Outcome colors: color a ruling or result by what it means, not by who won. A verdict such as "Buyer won" is neutral or amber, never red. Red is for errors and failures only.
+3. Top edge on cards: draw the 3px colored edge with `box-shadow: inset 0 3px 0 <color>` or a clipped pseudo-element so it stays a straight 3px line and does not taper into rounded corners.
+4. Section spacing: every section has the same gap above its heading (24px on phones). No heading may touch the card above it.
+5. Card anatomy: title, status chip, key amount, secondary line, action button. Join items in the secondary line with a separator (" · "). Never show internal ids such as `deal_1` on a card; keep them for the detail page.
+6. Test-network notice: put one line beside the core action and again beside any value-moving button. A footer-only notice is not enough.
+7. Tabs: at most four on phones. Move the fifth (for example Account) into the wallet menu.
+8. How it works: closed by default on phones, or reduced to a single summary line. Open steps must not push the content below it off the screen.
+9. Chip sentences: font 16–17px, never larger than a section heading. Put the chips on their own line under the sentence so they do not break across lines mid-sentence.
+10. Stat tiles: labels are one short line (for example "Protected", not "GEN protected now"). Sublines use status colors only, never the signature color.
+11. Page height: no `min-height` on the main area that leaves an empty gap above the footer.
+12. Contract address: show a short form (first 6 and last 4 characters) with a copy button and an explorer link, not the full string.
+
+Reminder: always judge a layout on a real phone width. A phone browser in "Desktop site" mode shows the wide layout with tiny text, which is not a bug of the page.
