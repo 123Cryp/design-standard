@@ -34,6 +34,8 @@ Signature color (one per project, replace per domain):
 
 Status colors (fixed): success #1F7A4D / #4CC38A, warning #9A6700 / #E5A23C, danger #B42318 / #F97066, info #1F5FAE / #6AA8F0.
 
+The signature color must never be green or teal, and must stay clearly apart from the fixed success green. Pick it from blue, indigo, violet, magenta, red or amber. Never use the signature color to show success, "Open" or "Balanced" states; those always use the status green.
+
 Use the signature color only for: logo, active tab icon, role-card icon tiles, step numbers, highlighted items, primary button. Everything else stays neutral.
 
 ## 3. Typography
@@ -71,7 +73,7 @@ Mobile-first.
 
 Home page, in order:
 
-1. Hero: live-status pill, headline, short lede, two CTAs on the left; domain-themed SVG illustration on the right (hidden below 720px) with one entrance animation. Below it a stats strip with four real stats and colored sublines.
+1. Hero: live-status pill, headline, short lede, two CTAs on the left; domain-themed SVG illustration on the right with one entrance animation (a compact 80–96px version beside the headline on phones, full size from 720px). The illustration is original, flat, two tones (signature tint plus signature), and specific to the project's domain. Below it a stats strip with four real stats and colored sublines.
 2. "Live contract activity" feed built from real contract data, with time-ago labels and explorer links, ending in a "Balanced" check from the contract's accounting view.
 3. Role entry cards with original SVG illustrations.
 4. The core action as a short sentence of tappable chip controls. It must be usable on the first screen without scrolling, with live values (amounts, fees, time) shown right next to it.
